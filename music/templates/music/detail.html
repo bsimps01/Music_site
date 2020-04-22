@@ -1,0 +1,10 @@
+<h1>Musicians</h1>
+<h2>{{musician.name}}</h2>
+<h3>ALBUMS</h3>
+<ul>
+  {%for album in musician.album_set.all%}
+  <li>
+    <a href="/music/album/{{album.id }}">{{album}}</a>
+  </li>
+  {%endfor%}
+</ul>

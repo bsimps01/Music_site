@@ -1,0 +1,16 @@
+<h1>Song Info</h1>
+<h3>{{song.name}}</h3>
+<ul>
+  <li>
+    <a href="/music/musician/{{ song.artist.id }}">{{song.artist}}</a>
+  </li>
+  <li>
+    <a href="/music/album/{{song.album.id }}">{{song.album}}</a>
+  </li>
+  <li>
+    <a href="/music/album/{{song.album.id }}">{{song.num_stars}}</a>
+  </li>
+  <li>
+    <a href="/music/album/{{song.album.id }}">{{song.genre}}</a>
+  </li>
+</ul>
