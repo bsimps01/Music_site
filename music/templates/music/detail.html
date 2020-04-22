@@ -5,7 +5,9 @@
   {%for album in musician.album_set.all%}
   <li>
     <a href="/music/album/{{album.id }}">{{album}}</a>
-    <a href="home.html">Return home</a>
+    <br>
+    <br>
+    <a href="{% url 'home' %}">Return home</a>
   </li>
   {%endfor%}
 </ul>
