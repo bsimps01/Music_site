@@ -2,15 +2,16 @@
 <h3>{{song.name}}</h3>
 <ul>
   <li>
-    <a href="/music/musician/{{ song.artist.id }}">{{song.artist}}</a>
+    <a href="/music/musician/{{ song.artist.id }}">Artist: {{song.artist}}</a>
   </li>
   <li>
-    <a href="/music/album/{{song.album.id }}">{{song.album}}</a>
+    <a href="/music/album/{{song.album.id }}">Album: {{song.album}}</a>
   </li>
   <li>
-    <a href="/music/album/{{song.album.id }}">{{song.num_stars}}</a>
+    <a href="/music/album/{{song.album.id }}">Rating: {{song.num_stars}}</a>
   </li>
   <li>
-    <a href="/music/album/{{song.album.id }}">{{song.genre}}</a>
+    <a href="/music/album/{{song.album.id }}">Genre: {{song.genre}}</a>
+    <a href="home.html">Return home</a>
   </li>
 </ul>

@@ -5,6 +5,7 @@
   {%for song in album.song_set.all%}
   <li>
     <a href="/music/song/{{song.id }}">{{song}} </a>
+    <a href="home.html">Return home</a>
   </li>
   {%endfor%}
 </ul>
